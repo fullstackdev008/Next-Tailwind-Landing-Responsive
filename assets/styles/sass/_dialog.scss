@@ -1,0 +1,160 @@
+@import "variables.scss";
+.show{
+  display: block !important;
+}
+
+.hide{
+  display: none !important;
+}
+// dialog part
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 0px;
+  left: 20px;
+  top: 90px;
+  //width: 100%; /* Full width */
+  //height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  color: white;
+}
+/* Modal Content */
+.modal-content {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  margin: auto;
+  padding: 76px 67px 0px 84px;
+  height: 490px !important;
+  width: 645px !important;
+  position: relative;
+}
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 100;
+  height: 14px;
+  width: 14px;
+  opacity: 0.54;
+  color: #000000;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 1.15;
+  @media screen and (min-width: 1280px) {
+    font-size: 55px;
+  }
+  @media screen and (max-width: 1280px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 45px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 35px;
+  }
+}
+.modal-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 1.15;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 1280px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 16px;
+  }
+}
+.modal-phone {
+  font-family: "Montserrat";
+  font-weight: 700;
+  @media screen and (min-width: 1280px) {
+    font-size: 45px;
+  }
+  @media screen and (max-width: 1280px) {
+    font-size: 35px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 20px;
+  }
+}
+.modal-horizontal-bar {
+  height: 1px;
+  background-color: white;
+}
+.modal-second-part-image {
+  bottom: 0px;
+  left: 50%;
+}
+// modal checkbox part
+.modal-checkbox {
+  width: 32px;
+  height: 32px;
+  -webkit-appearance: none;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  position: relative;
+}
+.modal-checkbox:active,
+.modal-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.modal-checkbox:checked {
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+  inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: $secondary-color;
+}
+.modal-checkbox:checked:after {
+  content: "✓";
+  font-size: 28px;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  color: $secondary-color;
+}
+.modal-input {
+  color: $secondary-color;
+  padding: 5px 10px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 10.5px;
+}
+.modal-button {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 10.5px;
+  color: $primary-color;
+  background-color: $secondary-color;
+  height: 32px;
+}
+.modal-policy {
+  font-size: 9px;
+}
